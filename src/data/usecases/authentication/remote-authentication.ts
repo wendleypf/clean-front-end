@@ -2,10 +2,9 @@
  * @author wendleypf <wendley.franca@ccc.ufcg.edu.br>
  */
 
-import { HttpPostClient } from '@/data/protocols/http/http-post-client'
-import { Authentication, AuthenticationParams } from '@/domain/usecases/authentication/authentication'
-import { AccountModel } from '@/domain/models/account-model'
-import { HttpStatusCode } from '@/data/protocols/http/http-response'
+import { HttpPostClient, HttpStatusCode } from '@/data/protocols/http'
+import { Authentication, AuthenticationParams } from '@/domain/usecases'
+import { AccountModel } from '@/domain/models'
 import { InvalidCredentialsError, UnexpectedError } from '@/domain/erros'
 
 export class RemoteAuthentication implements Authentication {

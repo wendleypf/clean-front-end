@@ -2,7 +2,7 @@
  * @author wendleypf <wendley.franca@ccc.ufcg.edu.br>
  */
 
-import { HttpResponse } from '@/data/protocols/http/http-response'
+import { HttpResponse } from '.'
 
 export type HttpPostParams<T> = {
   url: string
