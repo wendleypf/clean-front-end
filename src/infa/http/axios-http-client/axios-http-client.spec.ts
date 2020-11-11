@@ -2,8 +2,8 @@
  * @author wendleypf <wendley.franca@ccc.ufcg.edu.br>
  */
 
-import { AxiosHttpClient } from '@/infa/http'
 import { HttpPostParams } from '@/data/protocols/http'
+import { AxiosHttpClient } from '@/infa/http'
 import axios from 'axios'
 import faker from 'faker'
 

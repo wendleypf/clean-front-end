@@ -2,8 +2,8 @@
  * @author wendleypf <wendley.franca@ccc.ufcg.edu.br>
  */
 
-import { AuthenticationParams } from '@/domain/usecases'
 import { AccountModel } from '@/domain/models'
+import { AuthenticationParams } from '@/domain/usecases'
 import faker from 'faker'
 
 export const mockAuthentication = (): AuthenticationParams => ({

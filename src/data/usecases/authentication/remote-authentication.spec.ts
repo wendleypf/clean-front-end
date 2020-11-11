@@ -2,14 +2,15 @@
  * @author wendleypf <wendley.franca@ccc.ufcg.edu.br>
  */
 
-import { RemoteAuthentication } from './remote-authentication'
 import { HttpStatusCode } from '@/data/protocols/http'
-import { AuthenticationParams } from '@/domain/usecases'
-import { AccountModel } from '@/domain/models'
-import { InvalidCredentialsError, UnexpectedError } from '@/domain/erros'
-import { mockAccountModel, mockAuthentication } from '@/domain/test'
 import { HttpPostClientSpy } from '@/data/test'
+import { InvalidCredentialsError, UnexpectedError } from '@/domain/erros'
+import { AccountModel } from '@/domain/models'
+import { mockAccountModel, mockAuthentication } from '@/domain/test'
+import { AuthenticationParams } from '@/domain/usecases'
 import faker from 'faker'
+
+import { RemoteAuthentication } from './remote-authentication'
 
 type SutTypes = {
   sut: RemoteAuthentication
