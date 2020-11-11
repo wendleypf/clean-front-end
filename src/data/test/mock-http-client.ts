@@ -2,12 +2,7 @@
  * @author wendleypf <wendley.franca@ccc.ufcg.edu.br>
  */
 
-import {
-  HttpPostClient,
-  HttpPostParams,
-  HttpResponse,
-  HttpStatusCode
-} from '@/data/protocols/http'
+import { HttpPostClient, HttpPostParams, HttpResponse, HttpStatusCode } from '@/data/protocols/http'
 
 export class HttpPostClientSpy<T, E> implements HttpPostClient<T, E> {
   url?: string
