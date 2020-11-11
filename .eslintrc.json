@@ -4,7 +4,7 @@
     "project": "./tsconfig.json"
   },
   "plugins": [
-    "import-helpers"
+    "eslint-plugin-import-helpers"
   ],
   "rules": {
     "@typescript-eslint/consistent-type-definitions": "off",
