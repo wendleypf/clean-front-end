@@ -3,8 +3,8 @@
  */
 
 import { mockPostRequest } from '@/data/test'
-import { AxiosHttpClient } from '@/infa/http'
-import { mockAxios } from '@/infa/test'
+import { AxiosHttpClient } from '@/infra/http'
+import { mockAxios } from '@/infra/test'
 import axios from 'axios'
 
 jest.mock('axios')
