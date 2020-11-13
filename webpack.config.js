@@ -12,7 +12,7 @@ module.exports = {
   entry: './src/main/index.tsx',
   output: {
     path: path.join(__dirname, folderToBundle),
-    publicPath: folderToBundle,
+    publicPath: `/${folderToBundle}`,
     filename: 'bundle.js'
   },
   resolve: {
@@ -30,7 +30,6 @@ module.exports = {
       }, {
         test: /\.scss$/,
         use: [
-          { loader: 'style-loader' },
           {
             loader: 'css-loader',
             options: {
@@ -44,7 +43,7 @@ module.exports = {
   devServer: {
     contentBase: './public',
     writeToDisk: true,
-    historyApiFallBack: true
+    historyApiFallback: true
   },
   externals: {
     react: 'React',
