@@ -2,7 +2,7 @@
  * @author wendleypf <wendley.franca@ccc.ufcg.edu.br>
  */
 
-import { Logo, Spinner } from '@/presentation/components'
+import { LoginHeader, Spinner } from '@/presentation/components'
 import React from 'react'
 
 const Login: React.FC = () => {
@@ -10,10 +10,7 @@ const Login: React.FC = () => {
     <div className='row'>
       <div className='col-12'>
         <div className='card'>
-          <div className='card-header text-center'>
-            <Logo/>
-            <h4>4Dev - Enquetes para Programadores</h4>
-          </div>
+          <LoginHeader/>
           <div className='card-body'>
             <form autoComplete='false'>
               <div className='form-group'>
@@ -36,7 +33,6 @@ const Login: React.FC = () => {
               <a className='btn btn-link btn-block' href="">Create account</a>
             </form>
           </div>
-          <div className='card-footer text-muted'>2 days ago</div>
         </div>
       </div>
     </div>
