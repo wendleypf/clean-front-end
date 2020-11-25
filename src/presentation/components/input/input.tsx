@@ -27,12 +27,12 @@ const Input: React.FC<InputProps> = ({ name, label, ...rest }: InputProps) => {
     })
   }, [fieldName, registerField])
 
-  const handleFocus = (e): void => {
+  const handleFocus = (e: React.FocusEvent<HTMLInputElement>): void => {
     setReadOnly(false)
     e.target.readOnly = false
   }
 
-  const handleTouch = (e): void => {
+  const handleTouch = (e: React.FocusEvent<HTMLInputElement>): void => {
     setTouched(true)
   }
 
