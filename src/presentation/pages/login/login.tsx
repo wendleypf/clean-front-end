@@ -38,10 +38,14 @@ const Login: React.FC = () => {
                   type='password'
                   label='Password'
                   placeholder='Enter Password'/>
-                <button type='submit' className='btn btn-primary btn-block'>Log in
+                <button
+                  data-testid='submit'
+                  type='submit'
+                  disabled={true}
+                  className='btn btn-primary btn-block'>Log in
                   <Spinner/>
                 </button>
-                <a className='btn btn-link btn-block' href="">Create account</a>
+                <a className='btn btn-link btn-block' href=''>Create account</a>
               </Form>
             </FormContext.Provider>
           </div>
